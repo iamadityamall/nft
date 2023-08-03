@@ -250,3 +250,25 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+
+.nftCategories {
+  margin-top: 5rem;
+  cursor: grabbing;
+}
+
+.nftCategories ul {
+  /* display: grid;
+  grid-template-columns: repeat(7,1fr); */
+  list-style-type: none;
+  /* column-gap: 0.5rem; */
+}
+
+.nftCategories ul li{
+  border-radius: 5px;
+   padding: 0.5rem; 
+}
+
+.nftCategories ul li a{
+  text-decoration: none;
+}
