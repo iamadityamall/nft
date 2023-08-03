@@ -161,7 +161,7 @@ header {
 }
 
 .sidebar_socialLinkContainer li i{
-  font-size:1.5rem;
+  font-size:1.25rem;
   cursor: pointer;
   color: var(--gray-shade-dark)
 }
@@ -176,4 +176,14 @@ header {
 .sidebar_linksContainer li{
   padding: 1rem;
   border-bottom: 1px solid var(--gray-shade);
+  display: grid;
+  grid-template-columns: auto 1fr ;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 0.75rem;
+}
+
+.sidebar_linksContainer li i{
+  font-size: 1.25rem;
+  justify-self: flex-start;
 }
