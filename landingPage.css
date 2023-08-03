@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -8,12 +8,12 @@
 
 :root {
   --primary-color: red;
-  --secondary-color: #2081E2;
+  --secondary-color: #2081e2;
   --ternary-color: green;
   --fourth-color: #121212;
   --gray-shade: rgba(18, 18, 18, 0.12);
   --gray-shade-dark: #545454;
-  --primary-fonts: 'Poppins', sans-serif;
+  --primary-fonts: "Poppins", sans-serif;
   --border-bottom-shadow: 0 2px 6px -6px #222;
 }
 
@@ -24,8 +24,8 @@ img {
 }
 
 body {
-    font-family: var(--primary-fonts);
-    transition: all 500ms ease-in-out;
+  font-family: var(--primary-fonts);
+  transition: all 500ms ease-in-out;
 }
 
 .section {
@@ -34,11 +34,11 @@ body {
 }
 
 header {
-    box-shadow: var(--border-bottom-shadow);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
+  box-shadow: var(--border-bottom-shadow);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
 }
 
 .mobile_nav {
@@ -70,10 +70,10 @@ header {
 }
 
 .mobile_company_logo p {
-    font-size: 1.25rem;
-    margin-left: 0.5rem;
-    font-family: var(--primary-fonts);
-    font-weight: bolder;
+  font-size: 1.25rem;
+  margin-left: 0.5rem;
+  font-family: var(--primary-fonts);
+  font-weight: bolder;
 }
 
 .mobile_search_cart_button {
@@ -99,18 +99,18 @@ header {
 }
 
 .mobile_sidebar {
-    position: fixed;
-    top:0;
-    left: 0;
-    height: 100%;
-    width: 0%;
-    background: #fff;
-    transition: all 300ms ease-in-out;
-    z-index: 1;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    overflow-x: hidden;
-    box-shadow: 2px 0px 6px -6px #222;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background: #fff;
+  transition: all 300ms ease-in-out;
+  z-index: 1;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  overflow-x: hidden;
+  box-shadow: 2px 0px 6px -6px #222;
 }
 
 .closeButtonContainer {
@@ -122,7 +122,7 @@ header {
   padding: 1.25rem;
   background: none;
   border: none;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 #closeSidebarButton i {
@@ -160,10 +160,10 @@ header {
   padding: 0.5rem;
 }
 
-.sidebar_socialLinkContainer li i{
-  font-size:1.25rem;
+.sidebar_socialLinkContainer li i {
+  font-size: 1.25rem;
   cursor: pointer;
-  color: var(--gray-shade-dark)
+  color: var(--gray-shade-dark);
 }
 
 .sidebar_linksContainer {
@@ -173,7 +173,7 @@ header {
   padding: 1rem;
 }
 
-.sidebar_linksContainer li{
+.sidebar_linksContainer li {
   padding: 1rem;
   border-bottom: 1px solid var(--gray-shade);
   display: grid;
@@ -183,7 +183,7 @@ header {
   column-gap: 0.75rem;
 }
 
-.sidebar_linksContainer li i{
+.sidebar_linksContainer li i {
   font-size: 1.25rem;
   justify-self: flex-start;
 }
@@ -198,7 +198,7 @@ header {
   justify-self: flex-end;
 }
 
-.switch input { 
+.switch input {
   opacity: 0;
   width: 0;
   height: 0;
@@ -212,8 +212,8 @@ header {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -224,16 +224,16 @@ header {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: var(--secondary-color);
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px var(--secondary-color);
 }
 
 input:checked + .slider:before {
@@ -250,4 +250,3 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-

@@ -6,7 +6,7 @@ sidebarButton.addEventListener("click", openSideBar);
 closeSidebarButton.addEventListener("click", closeSidebar);
 
 function openSideBar() {
-  mobile_sidebar.style.width = "80%";
+  mobile_sidebar.style.width = "90%";
   mobile_sidebar.style.opacity = 1;
   document.body.style.background = "rgba(0,0,0,0.8)";
 }
