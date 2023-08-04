@@ -251,7 +251,6 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-
 .nftCategories {
   margin-top: 5rem;
   cursor: grabbing;
@@ -264,11 +263,20 @@ input:checked + .slider:before {
   /* column-gap: 0.5rem; */
 }
 
-.nftCategories ul li{
-  border-radius: 5px;
-   padding: 0.5rem; 
+77
+.nftCategories ul li a {
+  text-decoration: none;
 }
 
-.nftCategories ul li a{
-  text-decoration: none;
+.heroSection {
+  margin-top: 2rem;
+  height: 60vh;
+  display: grid;
+}
+
+.singleHeroCard {
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 1rem;
+  display: grid;
 }
