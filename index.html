@@ -3,119 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NFT</title>
-    <link rel="stylesheet" href="./landingPage.css" />
+    <title>Onership | Home</title>
+    <link rel="stylesheet" href="./assets/css/landingPage.css" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css "
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <link rel="stylesheet" href="./flickity.css" />
-    <script src="./flickity.pkgd.min.js"></script>
   </head>
   <body>
-    <aside class="mobile_sidebar">
-      <div class="closeButtonContainer">
-        <button type="button" id="closeSidebarButton">
-          <i class="fa-solid fa-x"></i>
+    <header class="header">
+      <nav class="navbarOne section">
+        <button type="button" class="burgerMenu">
+          <i class="fa-solid fa-bars-staggered"></i>
         </button>
-      </div>
-      <ul class="sidebar_linksContainer">
-        <li><i class="fa-solid fa-calendar"></i><span>Dros</span></li>
-        <li><i class="fa-solid fa-chart-simple"></i><span>Stats</span></li>
-
-        <li><i class="fa-solid fa-paperclip"></i><span>Resources</span></li>
-        <li>
-          <i class="fa-brands fa-product-hunt"></i><span>OpenSea Pro</span>
-        </li>
-        <li><i class="fa-solid fa-calendar"></i><span>CreLanguageate</span></li>
-        <li><i class="fa-solid fa-globe"></i><span>Language</span></li>
-        <li>
-          <i class="fa-solid fa-moon"></i><span>Night mode</span
-          ><label class="switch">
-            <input type="checkbox" />
-            <span class="slider round"></span>
-          </label>
-        </li>
-      </ul>
-      <div class="connectWalletButtonContainer">
-        <button type="button">Connect Wallet</button>
-      </div>
-
-      <ul class="sidebar_socialLinkContainer">
-        <li><i class="fa-brands fa-twitter"></i></li>
-        <li><i class="fa-brands fa-instagram"></i></li>
-        <li><i class="fa-brands fa-discord"></i></li>
-        <li><i class="fa-brands fa-youtube"></i></li>
-        <li><i class="fa-brands fa-tiktok"></i></li>
-        <li><i class="fa-brands fa-reddit-alien"></i></li>
-      </ul>
-    </aside>
-    <header>
-      <nav class="mobile_nav section">
-        <div class="mobile_burger_menu">
-          <i class="fa-solid fa-bars-staggered" id="sidebarButton"></i>
-        </div>
-        <div class="mobile_company_logo">
+        <div class="navbarOne_logoContainer">
           <figure>
             <img src="./assets/images/opensea_logos.png" alt="" />
           </figure>
-          <p>OpenSea</p>
+          <span>Onership</span>
         </div>
-        <div class="mobile_search_cart_button">
-          <button type="button" class="commonButton">
+        <div class="extraMenuVeryLargeScreen">
+          <div class="seperator"></div>
+          <span>Drops</span>
+          <span>Stats</span>
+        </div>
+        <div class="tableSearchContainer">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Search items, collections, and accounts"
+          />
+        </div>
+        <div class="walletLargeScreen">
+          <button type="button" id="walletLargeScreenButton">
+            <i class="fa-solid fa-wallet"></i>Connect wallet
+          </button>
+
+          <div class="walletProfileContainer">
+            <span><i class="fa-solid fa-user"></i></span>
+          </div>
+        </div>
+        <div class="navbarOne_buttonContainer">
+          <button type="button" id="searchButton">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
-          <button type="button" class="commonButton">
+          <button type="button" id="displayCartButton">
             <i class="fa-solid fa-cart-shopping"></i>
           </button>
         </div>
       </nav>
+      <form action="" class="navbarOne_searchContainer">
+        <i class="fa-solid fa-arrow-left" id="searchContainer_backButton"></i>
+        <input
+          type="text"
+          placeholder="Search OneOwnership"
+          id="searchElements"
+        />
+      </form>
     </header>
-    <nav class="nftCategories section">
-      <ul
-        class="js-flickity"
-        data-flickity-options='{ "wrapAround": true,"pageDots": false }'
-      >
-        <li><a href="">All</a></li>
-        <li><a href="">Art</a></li>
-        <li><a href="">Gaming</a></li>
-        <li><a href="">Memberships</a></li>
-        <li><a href="">PFPs</a></li>
-        <li><a href="">Photography</a></li>
-        <li><a href="">Music</a></li>
-      </ul>
-    </nav>
-    <main class="heroSection section">
-      <article class="singleHeroCard">
-        <figure><img src="" alt="" /></figure>
-        <div class="singleHeroCard_heading">
-          <h1>
-            <span>Persons, Places & Things - Dustin Yellin x Nouns x FWB</span
-            ><i class="fa-brands fa-twitter"></i><span></span>
-          </h1>
-          <h4>
-            By <span>DustinYellinDeployer</span
-            ><span><i class="fa-brands fa-twitter"></i></span>
-          </h4>
-          <h4>
-            <span>Open edition 0.00269 ETH</span
-            ><span><i class="fa-brands fa-twitter"></i></span>
-          </h4>
+    <aside class="walletMobileScreen">
+      <div class="header_walletMoblieScreen">
+        <div class="headerCartOne">
+          <span>Your cart</span>
+          <span><i class="fa-solid fa-info"></i></span>
         </div>
-        <div class="singleHeroCard_headingTwo">
-          <ul>
-            <li><span>0</span><span>days</span></li>
-            <li><span>0</span><span>days</span></li>
-            <li><span>0</span><span>days</span></li>
-            <li><span>0</span><span>days</span></li>
-          </ul>
-          <ul>
-            <li><i class="fa-solid fa-bell"></i></li>
-          </ul>
-        </div>
-      </article>
-    </main>
-    <footer></footer>
-    <script src="./landingPage.js"></script>
+        <i class="fa-solid fa-x" id="closeCartButton"></i>
+      </div>
+      <div class="itemsContainer">
+        <ul class="cartItemsContainer">
+          <li>Add items to get started.</li>
+        </ul>
+      </div>
+      <div class="purchaseButtonContainer">
+        <button type="button">Complete purchase</button>
+      </div>
+    </aside>
+    <script src="./assets/js/landingPage.js"></script>
   </body>
 </html>
